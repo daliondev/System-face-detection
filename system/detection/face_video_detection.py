@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 
-def face_streaming_detection():
+def face_video_detection():
     numbFaces = 0
     # Entrada del video por medio de la camara
     streaming = cv2.VideoCapture('system\Videos\Video1.mp4')
@@ -34,7 +34,3 @@ def face_streaming_detection():
     # Salida de la pantalla de visualizacion
     streaming.realease()
     cv2.destroyAllWindows()
-
-
-if __name__ == '__main__':
-    face_streaming_detection()
